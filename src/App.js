@@ -6,11 +6,15 @@ import Main from "./Main";
 import HomePage from "./HomePage";
 import Labels from "./Labels";
 import DownloadedFileCard from "./DownloadedFileCard";
+import Signupform from "./Signupform";
+import Loginform from "./Loginform";
 
 const App = () => {
   return (
     <Router>
       <Routes>
+      <Route path="/signup" element={<Signupform/>} />
+      <Route path="/login" element={<Loginform/>} />
         <Route path="/" element={<HomePage />} />
         <Route path="/app" element={<Main />} />
         <Route path="/labels" element={<Labels />} />
